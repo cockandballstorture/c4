@@ -7,7 +7,7 @@ void main()
   char a[16][16];
   for (i=1;i<17;i++){
       for (j=1;j<17;j++){
-          scanf("%16s",y);
+          scanf("%c",y);
            strcpy(a[i,j], y);
           }
    }
