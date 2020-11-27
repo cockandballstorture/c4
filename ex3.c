@@ -7,8 +7,7 @@ void main()
   for (i=1;i<17;i++){
       for (j=1;j<17;j++){
           scanf("%16s",y);
-            a[i,j]=='\0';
-            puts(y);
+           strcpy(a[i,j], y);
           }
    }
   scanf("%d",n);
@@ -23,8 +22,7 @@ void main()
   k=n%16;
   for (i=1;i<17;i++){
       for (j=1;j<(x-1);j++){
-          a[i,j]=='\0';
-          puts("*");
+          strcpy(a[i,j], "*");
      }
    }
    for (j=1;i<k+1;i++){
@@ -35,8 +33,7 @@ void main()
    k=16-n;
    for (i=1;i<17;i++){
       for (j=1;j<x+1;j++){
-          a[i,j]='\0';
-          puts("");
+          strcpy(a[i,j], "");
      }
    }
    for (j=1;i<k+1;i++){
